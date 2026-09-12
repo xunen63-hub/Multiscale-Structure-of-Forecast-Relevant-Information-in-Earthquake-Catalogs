@@ -41,8 +41,6 @@ The repository itself does not redistribute the earthquake catalog.
 | 13 | `13_annual_top3_vs_top5.py` | Perform the matched Annual Top-3 versus Top-5 analysis. |
 | 14 | `14_build_catalog_sensitivity.py` | Rebuild predictors under catalog-magnitude or focal-depth filtering while retaining the original targets. |
 | 15 | `15_magnitude_threshold_sensitivity.py` | Compare inner-validation SHAP structure after raising the feature-catalog magnitude threshold to `M >= 3`. |
-| 16 | `16_depth_sensitivity.py` | Evaluate the shallow-depth sensitivity analysis using feature events with `0 <= depth < 70 km`. |
-| 17 | `17_year_block_bootstrap.py` | Quantify uncertainty in matched outer-test comparisons using paired calendar-year block bootstrap. |
 
 Matching submission scripts are provided in `slurm/`.
 
