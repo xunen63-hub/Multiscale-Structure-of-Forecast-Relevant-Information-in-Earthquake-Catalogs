@@ -1,0 +1,2897 @@
+====================================================================================================
+Job started at: 2026年 06月 28日 星期日 16:11:03 CST
+Node: cnode49
+Workdir: PROJECT_ROOT/scripts
+PYTHON: ORIGINAL_PYTHON_ENV/bin/python
+DATA_DIR: PROJECT_ROOT/data_raw282_final
+OUT_DIR: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison
+sys.executable: ORIGINAL_PYTHON_ENV/bin/python
+xgboost version: 2.1.1
+catboost version: 1.2.3
+====================================================================================================
+====================================================================================================
+CatBoost, ExtraTrees and XGBoost binary M>=5 comparison on raw282 datasets
+data_dir: PROJECT_ROOT/data_raw282_final
+out_dir: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison
+horizons: [1, 3, 6, 12]
+folds: [1, 2, 3]
+models: ['catboost', 'extratrees', 'xgboost']
+region_name: all
+patch_csv: 
+sample_weight_mode: none
+n_jobs: 16
+HAS_XGBOOST: True
+HAS_CATBOOST: True
+candidate configs: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/candidate_configs_catboost_extratrees_xgb.json
+====================================================================================================
+
+####################################################################################################
+Load horizon 1m dataset
+X: (1247460, 282)
+region samples: 1247460
+y all: Counter({0: 1205535, 1: 41925})
+y region: Counter({0: 1205535, 1: 41925})
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.09,
+  "pred_positive_rate": 0.08627450980392157,
+  "acc": 0.9058823529411765,
+  "precision": 0.13068181818181818,
+  "recall": 0.3709677419354839,
+  "f1": 0.19327731092436973,
+  "auc": 0.7743974036987509,
+  "pr_auc": 0.1364111939049381,
+  "brier": 0.02799257136112089,
+  "tn": 1825,
+  "fp": 153,
+  "fn": 39,
+  "tp": 23
+}
+Best threshold: 0.09
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H1m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.060000000000000005,
+  "pred_positive_rate": 0.13676470588235295,
+  "acc": 0.865686274509804,
+  "precision": 0.08243727598566308,
+  "recall": 0.5609756097560976,
+  "f1": 0.14375000000000002,
+  "auc": 0.8112226845129882,
+  "pr_auc": 0.06864430406481253,
+  "brier": 0.019672933379678622,
+  "tn": 1743,
+  "fp": 256,
+  "fn": 18,
+  "tp": 23
+}
+Best threshold: 0.060000000000000005
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H1m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.16,
+  "pred_positive_rate": 0.04411764705882353,
+  "acc": 0.9372549019607843,
+  "precision": 0.3333333333333333,
+  "recall": 0.30612244897959184,
+  "f1": 0.3191489361702127,
+  "auc": 0.8238561129910253,
+  "pr_auc": 0.2744953124337212,
+  "brier": 0.04029005278788587,
+  "tn": 1882,
+  "fp": 60,
+  "fn": 68,
+  "tp": 30
+}
+Best threshold: 0.16
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H1m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.11,
+  "pred_positive_rate": 0.061764705882352944,
+  "acc": 0.9254901960784314,
+  "precision": 0.14285714285714285,
+  "recall": 0.2903225806451613,
+  "f1": 0.19148936170212766,
+  "auc": 0.7770149059003882,
+  "pr_auc": 0.1299288711657159,
+  "brier": 0.02800570154838907,
+  "tn": 1870,
+  "fp": 108,
+  "fn": 44,
+  "tp": 18
+}
+Best threshold: 0.11
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H1m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.06999999999999999,
+  "pred_positive_rate": 0.12058823529411765,
+  "acc": 0.8779411764705882,
+  "precision": 0.07723577235772358,
+  "recall": 0.4634146341463415,
+  "f1": 0.132404181184669,
+  "auc": 0.8045852194389879,
+  "pr_auc": 0.06798170564354454,
+  "brier": 0.019814589601009066,
+  "tn": 1772,
+  "fp": 227,
+  "fn": 22,
+  "tp": 19
+}
+Best threshold: 0.06999999999999999
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H1m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.058823529411764705,
+  "acc": 0.9284313725490196,
+  "precision": 0.3,
+  "recall": 0.3673469387755102,
+  "f1": 0.3302752293577982,
+  "auc": 0.8186647470522709,
+  "pr_auc": 0.2740455036595677,
+  "brier": 0.04016075439466816,
+  "tn": 1858,
+  "fp": 84,
+  "fn": 62,
+  "tp": 36
+}
+Best threshold: 0.15000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H1m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.08,
+  "pred_positive_rate": 0.16225490196078432,
+  "acc": 0.8397058823529412,
+  "precision": 0.09969788519637462,
+  "recall": 0.532258064516129,
+  "f1": 0.16793893129770995,
+  "auc": 0.7610815747415115,
+  "pr_auc": 0.12060664047006373,
+  "brier": 0.029082972834833645,
+  "tn": 1680,
+  "fp": 298,
+  "fn": 29,
+  "tp": 33
+}
+Best threshold: 0.08
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H1m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.09999999999999999,
+  "pred_positive_rate": 0.10637254901960784,
+  "acc": 0.8892156862745098,
+  "precision": 0.07373271889400922,
+  "recall": 0.3902439024390244,
+  "f1": 0.12403100775193798,
+  "auc": 0.7862101782598616,
+  "pr_auc": 0.0645356396730993,
+  "brier": 0.020749327854547413,
+  "tn": 1798,
+  "fp": 201,
+  "fn": 25,
+  "tp": 16
+}
+Best threshold: 0.09999999999999999
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H1m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.039705882352941174,
+  "acc": 0.9397058823529412,
+  "precision": 0.345679012345679,
+  "recall": 0.2857142857142857,
+  "f1": 0.3128491620111732,
+  "auc": 0.8056863322053848,
+  "pr_auc": 0.26574453456090835,
+  "brier": 0.041208948292357134,
+  "tn": 1889,
+  "fp": 53,
+  "fn": 70,
+  "tp": 28
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H1m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.03235294117647059,
+  "acc": 0.9509803921568627,
+  "precision": 0.21212121212121213,
+  "recall": 0.22580645161290322,
+  "f1": 0.21875,
+  "auc": 0.7735738282396686,
+  "pr_auc": 0.15717573720620268,
+  "brier": 0.02771493939883557,
+  "tn": 1926,
+  "fp": 52,
+  "fn": 48,
+  "tp": 14
+}
+Best threshold: 0.13
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H1m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.060000000000000005,
+  "pred_positive_rate": 0.11911764705882352,
+  "acc": 0.8823529411764706,
+  "precision": 0.09053497942386832,
+  "recall": 0.5365853658536586,
+  "f1": 0.15492957746478872,
+  "auc": 0.808855647335863,
+  "pr_auc": 0.07259089724649836,
+  "brier": 0.019805444189327302,
+  "tn": 1778,
+  "fp": 221,
+  "fn": 19,
+  "tp": 22
+}
+Best threshold: 0.060000000000000005
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H1m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.053431372549019605,
+  "acc": 0.9269607843137255,
+  "precision": 0.26605504587155965,
+  "recall": 0.29591836734693877,
+  "f1": 0.28019323671497587,
+  "auc": 0.8067161983227895,
+  "pr_auc": 0.23973889798922038,
+  "brier": 0.042593276517432034,
+  "tn": 1862,
+  "fp": 80,
+  "fn": 69,
+  "tp": 29
+}
+Best threshold: 0.18000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H1m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.030882352941176472,
+  "acc": 0.9524509803921568,
+  "precision": 0.2222222222222222,
+  "recall": 0.22580645161290322,
+  "f1": 0.22399999999999998,
+  "auc": 0.7719837568087673,
+  "pr_auc": 0.15585698593583835,
+  "brier": 0.027772358021751153,
+  "tn": 1929,
+  "fp": 49,
+  "fn": 48,
+  "tp": 14
+}
+Best threshold: 0.13
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H1m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.060000000000000005,
+  "pred_positive_rate": 0.12009803921568628,
+  "acc": 0.8803921568627451,
+  "precision": 0.08571428571428572,
+  "recall": 0.5121951219512195,
+  "f1": 0.14685314685314685,
+  "auc": 0.8038653473078001,
+  "pr_auc": 0.07549435631332856,
+  "brier": 0.019854142842291513,
+  "tn": 1775,
+  "fp": 224,
+  "fn": 20,
+  "tp": 21
+}
+Best threshold: 0.060000000000000005
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H1m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.24000000000000002,
+  "pred_positive_rate": 0.04019607843137255,
+  "acc": 0.9382352941176471,
+  "precision": 0.32926829268292684,
+  "recall": 0.2755102040816326,
+  "f1": 0.3,
+  "auc": 0.7968116185712183,
+  "pr_auc": 0.25514665109690476,
+  "brier": 0.04235765409272072,
+  "tn": 1887,
+  "fp": 55,
+  "fn": 71,
+  "tp": 27
+}
+Best threshold: 0.24000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H1m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.026470588235294117,
+  "acc": 0.9549019607843138,
+  "precision": 0.2222222222222222,
+  "recall": 0.1935483870967742,
+  "f1": 0.20689655172413793,
+  "auc": 0.7691868619328746,
+  "pr_auc": 0.15623990428125006,
+  "brier": 0.0277490750857656,
+  "tn": 1936,
+  "fp": 42,
+  "fn": 50,
+  "tp": 12
+}
+Best threshold: 0.13
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H1m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.06999999999999999,
+  "pred_positive_rate": 0.08872549019607844,
+  "acc": 0.9058823529411765,
+  "precision": 0.08287292817679558,
+  "recall": 0.36585365853658536,
+  "f1": 0.13513513513513514,
+  "auc": 0.8055125123537378,
+  "pr_auc": 0.07593900717735905,
+  "brier": 0.01988312523725657,
+  "tn": 1833,
+  "fp": 166,
+  "fn": 26,
+  "tp": 15
+}
+Best threshold: 0.06999999999999999
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H1m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.19,
+  "pred_positive_rate": 0.0446078431372549,
+  "acc": 0.9338235294117647,
+  "precision": 0.2967032967032967,
+  "recall": 0.2755102040816326,
+  "f1": 0.2857142857142857,
+  "auc": 0.8022972319720886,
+  "pr_auc": 0.2584749243419857,
+  "brier": 0.0418940815432406,
+  "tn": 1878,
+  "fp": 64,
+  "fn": 71,
+  "tp": 27
+}
+Best threshold: 0.19
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H1m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.11,
+  "pred_positive_rate": 0.043137254901960784,
+  "acc": 0.9441176470588235,
+  "precision": 0.20454545454545456,
+  "recall": 0.2903225806451613,
+  "f1": 0.24000000000000005,
+  "auc": 0.7793877817280407,
+  "pr_auc": 0.1493271859507951,
+  "brier": 0.027961658010141728,
+  "tn": 1908,
+  "fp": 70,
+  "fn": 44,
+  "tp": 18
+}
+Best threshold: 0.11
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H1m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.060000000000000005,
+  "pred_positive_rate": 0.1142156862745098,
+  "acc": 0.8862745098039215,
+  "precision": 0.09012875536480687,
+  "recall": 0.5121951219512195,
+  "f1": 0.1532846715328467,
+  "auc": 0.8164082041020511,
+  "pr_auc": 0.0829399033930448,
+  "brier": 0.01982490050747931,
+  "tn": 1787,
+  "fp": 212,
+  "fn": 20,
+  "tp": 21
+}
+Best threshold: 0.060000000000000005
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H1m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.04607843137254902,
+  "acc": 0.9313725490196079,
+  "precision": 0.2765957446808511,
+  "recall": 0.2653061224489796,
+  "f1": 0.27083333333333337,
+  "auc": 0.807667248155699,
+  "pr_auc": 0.2497217870105113,
+  "brier": 0.04486516300386204,
+  "tn": 1874,
+  "fp": 68,
+  "fn": 72,
+  "tp": 26
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H1m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.12,
+  "pred_positive_rate": 0.027941176470588237,
+  "acc": 0.9544117647058824,
+  "precision": 0.22807017543859648,
+  "recall": 0.20967741935483872,
+  "f1": 0.21848739495798322,
+  "auc": 0.7793877817280408,
+  "pr_auc": 0.14222399151581494,
+  "brier": 0.027952427701019973,
+  "tn": 1934,
+  "fp": 44,
+  "fn": 49,
+  "tp": 13
+}
+Best threshold: 0.12
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H1m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.06999999999999999,
+  "pred_positive_rate": 0.09215686274509804,
+  "acc": 0.9044117647058824,
+  "precision": 0.09042553191489362,
+  "recall": 0.4146341463414634,
+  "f1": 0.14847161572052403,
+  "auc": 0.8126380263302382,
+  "pr_auc": 0.08054544438581562,
+  "brier": 0.019951357778077414,
+  "tn": 1828,
+  "fp": 171,
+  "fn": 24,
+  "tp": 17
+}
+Best threshold: 0.06999999999999999
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H1m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.060000000000000005,
+  "pred_positive_rate": 0.18137254901960784,
+  "acc": 0.8333333333333334,
+  "precision": 0.17297297297297298,
+  "recall": 0.6530612244897959,
+  "f1": 0.27350427350427353,
+  "auc": 0.8082452342419975,
+  "pr_auc": 0.25378376463120345,
+  "brier": 0.04392160662252609,
+  "tn": 1636,
+  "fp": 306,
+  "fn": 34,
+  "tp": 64
+}
+Best threshold: 0.060000000000000005
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H1m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=1m, fold=1
+Train: (990165, 282) Counter({0: 957136, 1: 33029})
+Valid: (2040, 282) Counter({0: 1978, 1: 62})
+Valid metrics: {
+  "positive_rate": 0.030392156862745098,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.025490196078431372,
+  "acc": 0.9558823529411765,
+  "precision": 0.23076923076923078,
+  "recall": 0.1935483870967742,
+  "f1": 0.21052631578947367,
+  "auc": 0.7837095143351056,
+  "pr_auc": 0.1345191129383958,
+  "brier": 0.028310986693936616,
+  "tn": 1938,
+  "fp": 40,
+  "fn": 50,
+  "tp": 12
+}
+Best threshold: 0.13
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H1m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=1m, fold=2
+Train: (1052215, 282) Counter({0: 1017077, 1: 35138})
+Valid: (2040, 282) Counter({0: 1999, 1: 41})
+Valid metrics: {
+  "positive_rate": 0.020098039215686276,
+  "threshold": 0.06999999999999999,
+  "pred_positive_rate": 0.08529411764705883,
+  "acc": 0.9112745098039216,
+  "precision": 0.09770114942528736,
+  "recall": 0.4146341463414634,
+  "f1": 0.15813953488372093,
+  "auc": 0.8141265754828634,
+  "pr_auc": 0.0781171484280355,
+  "brier": 0.019871772673084133,
+  "tn": 1842,
+  "fp": 157,
+  "fn": 24,
+  "tp": 17
+}
+Best threshold: 0.06999999999999999
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H1m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=1m, fold=3
+Train: (1114265, 282) Counter({0: 1077556, 1: 36709})
+Valid: (2040, 282) Counter({0: 1942, 1: 98})
+Valid metrics: {
+  "positive_rate": 0.04803921568627451,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.07352941176470588,
+  "acc": 0.9127450980392157,
+  "precision": 0.23333333333333334,
+  "recall": 0.35714285714285715,
+  "f1": 0.28225806451612906,
+  "auc": 0.8085132096092814,
+  "pr_auc": 0.2619772858876051,
+  "brier": 0.04257486434002779,
+  "tn": 1827,
+  "fp": 115,
+  "fn": 63,
+  "tp": 35
+}
+Best threshold: 0.14
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H1m_fold3.csv
+
+####################################################################################################
+Load horizon 3m dataset
+X: (1242275, 282)
+region samples: 1242275
+y all: Counter({0: 1132873, 1: 109402})
+y region: Counter({0: 1132873, 1: 109402})
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.17941176470588235,
+  "acc": 0.8303921568627451,
+  "precision": 0.24043715846994534,
+  "recall": 0.5641025641025641,
+  "f1": 0.33716475095785436,
+  "auc": 0.7568729925417823,
+  "pr_auc": 0.2144390816327212,
+  "brier": 0.0649909829612838,
+  "tn": 1606,
+  "fp": 278,
+  "fn": 68,
+  "tp": 88
+}
+Best threshold: 0.15000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H3m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.12990196078431374,
+  "acc": 0.8686274509803922,
+  "precision": 0.2188679245283019,
+  "recall": 0.48739495798319327,
+  "f1": 0.3020833333333333,
+  "auc": 0.8021382420745498,
+  "pr_auc": 0.19503620082293605,
+  "brier": 0.05129773254666661,
+  "tn": 1714,
+  "fp": 207,
+  "fn": 61,
+  "tp": 58
+}
+Best threshold: 0.15000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H3m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.17549019607843136,
+  "acc": 0.8504901960784313,
+  "precision": 0.41899441340782123,
+  "recall": 0.6072874493927125,
+  "f1": 0.49586776859504134,
+  "auc": 0.8250099916228427,
+  "pr_auc": 0.4710916019927162,
+  "brier": 0.08692734686346543,
+  "tn": 1585,
+  "fp": 208,
+  "fn": 97,
+  "tp": 150
+}
+Best threshold: 0.18000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H3m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.1568627450980392,
+  "acc": 0.8441176470588235,
+  "precision": 0.246875,
+  "recall": 0.5064102564102564,
+  "f1": 0.33193277310924374,
+  "auc": 0.7538754151015298,
+  "pr_auc": 0.22282105287752224,
+  "brier": 0.06492819836604398,
+  "tn": 1643,
+  "fp": 241,
+  "fn": 77,
+  "tp": 79
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H3m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.1161764705882353,
+  "acc": 0.8794117647058823,
+  "precision": 0.2320675105485232,
+  "recall": 0.46218487394957986,
+  "f1": 0.30898876404494385,
+  "auc": 0.7983543235097267,
+  "pr_auc": 0.19128875419409644,
+  "brier": 0.05133391176451959,
+  "tn": 1739,
+  "fp": 182,
+  "fn": 64,
+  "tp": 55
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H3m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.22,
+  "pred_positive_rate": 0.13137254901960785,
+  "acc": 0.8691176470588236,
+  "precision": 0.4626865671641791,
+  "recall": 0.5020242914979757,
+  "f1": 0.4815533980582524,
+  "auc": 0.8220542776564733,
+  "pr_auc": 0.46113992901320106,
+  "brier": 0.08644719107331524,
+  "tn": 1649,
+  "fp": 144,
+  "fn": 123,
+  "tp": 124
+}
+Best threshold: 0.22
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H3m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.23,
+  "pred_positive_rate": 0.128921568627451,
+  "acc": 0.8583333333333333,
+  "precision": 0.24714828897338403,
+  "recall": 0.4166666666666667,
+  "f1": 0.3102625298329355,
+  "auc": 0.7418068484947465,
+  "pr_auc": 0.2091491782915516,
+  "brier": 0.06741398091510571,
+  "tn": 1686,
+  "fp": 198,
+  "fn": 91,
+  "tp": 65
+}
+Best threshold: 0.23
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H3m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.19,
+  "pred_positive_rate": 0.15490196078431373,
+  "acc": 0.8436274509803922,
+  "precision": 0.18354430379746836,
+  "recall": 0.48739495798319327,
+  "f1": 0.26666666666666666,
+  "auc": 0.7759876464901421,
+  "pr_auc": 0.16002538990489482,
+  "brier": 0.05513864325651394,
+  "tn": 1663,
+  "fp": 258,
+  "fn": 61,
+  "tp": 58
+}
+Best threshold: 0.19
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H3m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.23,
+  "pred_positive_rate": 0.17352941176470588,
+  "acc": 0.8485294117647059,
+  "precision": 0.4124293785310734,
+  "recall": 0.5910931174089069,
+  "f1": 0.48585690515806984,
+  "auc": 0.8075286031372567,
+  "pr_auc": 0.4451587464311295,
+  "brier": 0.08516632009578542,
+  "tn": 1585,
+  "fp": 208,
+  "fn": 101,
+  "tp": 146
+}
+Best threshold: 0.23
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H3m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.2,
+  "pred_positive_rate": 0.12254901960784313,
+  "acc": 0.861764705882353,
+  "precision": 0.248,
+  "recall": 0.3974358974358974,
+  "f1": 0.3054187192118227,
+  "auc": 0.7328753606619849,
+  "pr_auc": 0.20547609545394738,
+  "brier": 0.06865368380519694,
+  "tn": 1696,
+  "fp": 188,
+  "fn": 94,
+  "tp": 62
+}
+Best threshold: 0.2
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H3m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.12,
+  "pred_positive_rate": 0.1730392156862745,
+  "acc": 0.8343137254901961,
+  "precision": 0.18980169971671387,
+  "recall": 0.5630252100840336,
+  "f1": 0.2838983050847458,
+  "auc": 0.7849706254183088,
+  "pr_auc": 0.1927318590623549,
+  "brier": 0.05224917936385545,
+  "tn": 1635,
+  "fp": 286,
+  "fn": 52,
+  "tp": 67
+}
+Best threshold: 0.12
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H3m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.19558823529411765,
+  "acc": 0.8431372549019608,
+  "precision": 0.40852130325814534,
+  "recall": 0.659919028340081,
+  "f1": 0.5046439628482973,
+  "auc": 0.8018000727074024,
+  "pr_auc": 0.4642346745366632,
+  "brier": 0.0854746746573799,
+  "tn": 1557,
+  "fp": 236,
+  "fn": 84,
+  "tp": 163
+}
+Best threshold: 0.14
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H3m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.19,
+  "pred_positive_rate": 0.12941176470588237,
+  "acc": 0.8558823529411764,
+  "precision": 0.23863636363636365,
+  "recall": 0.40384615384615385,
+  "f1": 0.30000000000000004,
+  "auc": 0.7277886656867549,
+  "pr_auc": 0.21019984624256838,
+  "brier": 0.06740392887787543,
+  "tn": 1683,
+  "fp": 201,
+  "fn": 93,
+  "tp": 63
+}
+Best threshold: 0.19
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H3m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.12745098039215685,
+  "acc": 0.8671568627450981,
+  "precision": 0.2076923076923077,
+  "recall": 0.453781512605042,
+  "f1": 0.2849604221635884,
+  "auc": 0.7796840756083797,
+  "pr_auc": 0.1890770701944715,
+  "brier": 0.05205730375482844,
+  "tn": 1715,
+  "fp": 206,
+  "fn": 65,
+  "tp": 54
+}
+Best threshold: 0.15000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H3m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.19264705882352942,
+  "acc": 0.8441176470588235,
+  "precision": 0.40966921119592875,
+  "recall": 0.6518218623481782,
+  "f1": 0.503125,
+  "auc": 0.7908375125036411,
+  "pr_auc": 0.4681800354211458,
+  "brier": 0.08478812387135572,
+  "tn": 1561,
+  "fp": 232,
+  "fn": 86,
+  "tp": 161
+}
+Best threshold: 0.14
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H3m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.14068627450980392,
+  "acc": 0.8495098039215686,
+  "precision": 0.23693379790940766,
+  "recall": 0.4358974358974359,
+  "f1": 0.30699774266365687,
+  "auc": 0.731255784201644,
+  "pr_auc": 0.21082087011058473,
+  "brier": 0.06711309067658762,
+  "tn": 1665,
+  "fp": 219,
+  "fn": 88,
+  "tp": 68
+}
+Best threshold: 0.18000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H3m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.16,
+  "pred_positive_rate": 0.11568627450980393,
+  "acc": 0.8769607843137255,
+  "precision": 0.22033898305084745,
+  "recall": 0.4369747899159664,
+  "f1": 0.29295774647887324,
+  "auc": 0.7817313286584805,
+  "pr_auc": 0.19103412169173883,
+  "brier": 0.05223665081944551,
+  "tn": 1737,
+  "fp": 184,
+  "fn": 67,
+  "tp": 52
+}
+Best threshold: 0.16
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H3m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.17647058823529413,
+  "acc": 0.8563725490196078,
+  "precision": 0.4361111111111111,
+  "recall": 0.6356275303643725,
+  "f1": 0.5172981878088962,
+  "auc": 0.7897559334433729,
+  "pr_auc": 0.47455636397201445,
+  "brier": 0.08509247416406164,
+  "tn": 1590,
+  "fp": 203,
+  "fn": 90,
+  "tp": 157
+}
+Best threshold: 0.15000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H3m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.1392156862745098,
+  "acc": 0.8529411764705882,
+  "precision": 0.24647887323943662,
+  "recall": 0.44871794871794873,
+  "f1": 0.3181818181818182,
+  "auc": 0.7404560672872776,
+  "pr_auc": 0.2386576917114051,
+  "brier": 0.06523368028750119,
+  "tn": 1670,
+  "fp": 214,
+  "fn": 86,
+  "tp": 70
+}
+Best threshold: 0.18000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H3m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.1034313725490196,
+  "acc": 0.888235294117647,
+  "precision": 0.24170616113744076,
+  "recall": 0.42857142857142855,
+  "f1": 0.3090909090909091,
+  "auc": 0.7973131990953591,
+  "pr_auc": 0.1920947710139511,
+  "brier": 0.052039030605932915,
+  "tn": 1761,
+  "fp": 160,
+  "fn": 68,
+  "tp": 51
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H3m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.1514705882352941,
+  "acc": 0.8666666666666667,
+  "precision": 0.459546925566343,
+  "recall": 0.5748987854251012,
+  "f1": 0.5107913669064749,
+  "auc": 0.8039225869384087,
+  "pr_auc": 0.4520679498892811,
+  "brier": 0.0863974904243589,
+  "tn": 1626,
+  "fp": 167,
+  "fn": 105,
+  "tp": 142
+}
+Best threshold: 0.18000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H3m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.14460784313725492,
+  "acc": 0.8524509803921568,
+  "precision": 0.2542372881355932,
+  "recall": 0.4807692307692308,
+  "f1": 0.33259423503325936,
+  "auc": 0.7442498230714791,
+  "pr_auc": 0.23350591110743601,
+  "brier": 0.06484451403996278,
+  "tn": 1664,
+  "fp": 220,
+  "fn": 81,
+  "tp": 75
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H3m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.19,
+  "pred_positive_rate": 0.08676470588235294,
+  "acc": 0.9029411764705882,
+  "precision": 0.2768361581920904,
+  "recall": 0.4117647058823529,
+  "f1": 0.3310810810810811,
+  "auc": 0.8013508370552802,
+  "pr_auc": 0.2114079094732448,
+  "brier": 0.05086192657956814,
+  "tn": 1793,
+  "fp": 128,
+  "fn": 70,
+  "tp": 49
+}
+Best threshold: 0.19
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H3m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.16372549019607843,
+  "acc": 0.8602941176470589,
+  "precision": 0.4431137724550898,
+  "recall": 0.5991902834008097,
+  "f1": 0.5094664371772805,
+  "auc": 0.8107462443917077,
+  "pr_auc": 0.45860366367774125,
+  "brier": 0.08590673172503156,
+  "tn": 1607,
+  "fp": 186,
+  "fn": 99,
+  "tp": 148
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H3m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=3m, fold=1
+Train: (984980, 282) Counter({0: 898169, 1: 86811})
+Valid: (2040, 282) Counter({0: 1884, 1: 156})
+Valid metrics: {
+  "positive_rate": 0.07647058823529412,
+  "threshold": 0.23,
+  "pred_positive_rate": 0.08529411764705883,
+  "acc": 0.8921568627450981,
+  "precision": 0.3160919540229885,
+  "recall": 0.3525641025641026,
+  "f1": 0.3333333333333333,
+  "auc": 0.7366623115030758,
+  "pr_auc": 0.23926539388774667,
+  "brier": 0.06464235921870125,
+  "tn": 1765,
+  "fp": 119,
+  "fn": 101,
+  "tp": 55
+}
+Best threshold: 0.23
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H3m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=3m, fold=2
+Train: (1047030, 282) Counter({0: 954825, 1: 92205})
+Valid: (2040, 282) Counter({0: 1921, 1: 119})
+Valid metrics: {
+  "positive_rate": 0.058333333333333334,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.09754901960784314,
+  "acc": 0.8931372549019608,
+  "precision": 0.25125628140703515,
+  "recall": 0.42016806722689076,
+  "f1": 0.31446540880503143,
+  "auc": 0.7813988687614557,
+  "pr_auc": 0.1921127455744158,
+  "brier": 0.052095893174397,
+  "tn": 1772,
+  "fp": 149,
+  "fn": 69,
+  "tp": 50
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H3m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=3m, fold=3
+Train: (1109080, 282) Counter({0: 1012649, 1: 96431})
+Valid: (2040, 282) Counter({0: 1793, 1: 247})
+Valid metrics: {
+  "positive_rate": 0.12107843137254902,
+  "threshold": 0.17,
+  "pred_positive_rate": 0.15490196078431373,
+  "acc": 0.8671568627450981,
+  "precision": 0.4620253164556962,
+  "recall": 0.5910931174089069,
+  "f1": 0.5186500888099468,
+  "auc": 0.803780333325054,
+  "pr_auc": 0.46423391174763357,
+  "brier": 0.08559148120236391,
+  "tn": 1623,
+  "fp": 170,
+  "fn": 101,
+  "tp": 146
+}
+Best threshold: 0.17
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H3m_fold3.csv
+
+####################################################################################################
+Load horizon 6m dataset
+X: (1234455, 282)
+region samples: 1234455
+y all: Counter({0: 1043564, 1: 190891})
+y region: Counter({0: 1043564, 1: 190891})
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.25,
+  "pred_positive_rate": 0.17598039215686276,
+  "acc": 0.8274509803921568,
+  "precision": 0.3816155988857939,
+  "recall": 0.5131086142322098,
+  "f1": 0.43769968051118213,
+  "auc": 0.7422838625998381,
+  "pr_auc": 0.34041477458090896,
+  "brier": 0.10047061607764149,
+  "tn": 1551,
+  "fp": 222,
+  "fn": 130,
+  "tp": 137
+}
+Best threshold: 0.25
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H6m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.10833333333333334,
+  "acc": 0.8754901960784314,
+  "precision": 0.4343891402714932,
+  "recall": 0.4266666666666667,
+  "f1": 0.4304932735426009,
+  "auc": 0.8183042546678909,
+  "pr_auc": 0.36056027435141963,
+  "brier": 0.08384116338407917,
+  "tn": 1690,
+  "fp": 125,
+  "fn": 129,
+  "tp": 96
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H6m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.22,
+  "pred_positive_rate": 0.23529411764705882,
+  "acc": 0.821078431372549,
+  "precision": 0.5479166666666667,
+  "recall": 0.6399026763990268,
+  "f1": 0.5903479236812571,
+  "auc": 0.8216421042569366,
+  "pr_auc": 0.5889158379227176,
+  "brier": 0.12531982100015635,
+  "tn": 1412,
+  "fp": 217,
+  "fn": 148,
+  "tp": 263
+}
+Best threshold: 0.22
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H6m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.24000000000000002,
+  "pred_positive_rate": 0.18382352941176472,
+  "acc": 0.8225490196078431,
+  "precision": 0.37333333333333335,
+  "recall": 0.5243445692883895,
+  "f1": 0.43613707165109034,
+  "auc": 0.7405178805680714,
+  "pr_auc": 0.33683277985335774,
+  "brier": 0.10058373748749777,
+  "tn": 1538,
+  "fp": 235,
+  "fn": 127,
+  "tp": 140
+}
+Best threshold: 0.24000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H6m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.11225490196078432,
+  "acc": 0.8735294117647059,
+  "precision": 0.4279475982532751,
+  "recall": 0.43555555555555553,
+  "f1": 0.4317180616740088,
+  "auc": 0.8158138965411692,
+  "pr_auc": 0.35933399944170324,
+  "brier": 0.08365791026465222,
+  "tn": 1684,
+  "fp": 131,
+  "fn": 127,
+  "tp": 98
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H6m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.22,
+  "pred_positive_rate": 0.24313725490196078,
+  "acc": 0.817156862745098,
+  "precision": 0.5383064516129032,
+  "recall": 0.6496350364963503,
+  "f1": 0.5887541345093715,
+  "auc": 0.8212985740509231,
+  "pr_auc": 0.5897484529319446,
+  "brier": 0.1241154277294651,
+  "tn": 1400,
+  "fp": 229,
+  "fn": 144,
+  "tp": 267
+}
+Best threshold: 0.22
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H6m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.21029411764705883,
+  "acc": 0.7990196078431373,
+  "precision": 0.3333333333333333,
+  "recall": 0.5355805243445693,
+  "f1": 0.4109195402298851,
+  "auc": 0.719621834804633,
+  "pr_auc": 0.35545843961668444,
+  "brier": 0.10359883514489335,
+  "tn": 1487,
+  "fp": 286,
+  "fn": 124,
+  "tp": 143
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H6m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.38,
+  "pred_positive_rate": 0.09313725490196079,
+  "acc": 0.8808823529411764,
+  "precision": 0.45263157894736844,
+  "recall": 0.38222222222222224,
+  "f1": 0.4144578313253012,
+  "auc": 0.793483930211203,
+  "pr_auc": 0.32615578994604205,
+  "brier": 0.08795355578898431,
+  "tn": 1711,
+  "fp": 104,
+  "fn": 139,
+  "tp": 86
+}
+Best threshold: 0.38
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H6m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.26,
+  "pred_positive_rate": 0.2426470588235294,
+  "acc": 0.8147058823529412,
+  "precision": 0.5333333333333333,
+  "recall": 0.6423357664233577,
+  "f1": 0.5827814569536424,
+  "auc": 0.8009690539028765,
+  "pr_auc": 0.5790905789877753,
+  "brier": 0.122388462874422,
+  "tn": 1398,
+  "fp": 231,
+  "fn": 147,
+  "tp": 264
+}
+Best threshold: 0.26
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H6m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.35000000000000003,
+  "pred_positive_rate": 0.12794117647058822,
+  "acc": 0.8382352941176471,
+  "precision": 0.3793103448275862,
+  "recall": 0.3707865168539326,
+  "f1": 0.375,
+  "auc": 0.7192954661157479,
+  "pr_auc": 0.3269801685110921,
+  "brier": 0.10391887474269557,
+  "tn": 1611,
+  "fp": 162,
+  "fn": 168,
+  "tp": 99
+}
+Best threshold: 0.35000000000000003
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H6m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.31,
+  "pred_positive_rate": 0.11372549019607843,
+  "acc": 0.8720588235294118,
+  "precision": 0.4224137931034483,
+  "recall": 0.43555555555555553,
+  "f1": 0.42888402625820565,
+  "auc": 0.7962093663911847,
+  "pr_auc": 0.3293514087680746,
+  "brier": 0.08591791314906798,
+  "tn": 1681,
+  "fp": 134,
+  "fn": 127,
+  "tp": 98
+}
+Best threshold: 0.31
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H6m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.24000000000000002,
+  "pred_positive_rate": 0.21127450980392157,
+  "acc": 0.8372549019607843,
+  "precision": 0.5916473317865429,
+  "recall": 0.6204379562043796,
+  "f1": 0.6057007125890737,
+  "auc": 0.7797612913151084,
+  "pr_auc": 0.6082569608383923,
+  "brier": 0.12181666122742629,
+  "tn": 1453,
+  "fp": 176,
+  "fn": 156,
+  "tp": 255
+}
+Best threshold: 0.24000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H6m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.33,
+  "pred_positive_rate": 0.1426470588235294,
+  "acc": 0.8284313725490197,
+  "precision": 0.35738831615120276,
+  "recall": 0.3895131086142322,
+  "f1": 0.37275985663082434,
+  "auc": 0.7178368410045818,
+  "pr_auc": 0.3048202684409778,
+  "brier": 0.10553602790106952,
+  "tn": 1586,
+  "fp": 187,
+  "fn": 163,
+  "tp": 104
+}
+Best threshold: 0.33
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H6m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.29000000000000004,
+  "pred_positive_rate": 0.128921568627451,
+  "acc": 0.8598039215686275,
+  "precision": 0.3840304182509506,
+  "recall": 0.4488888888888889,
+  "f1": 0.4139344262295082,
+  "auc": 0.7854300581573309,
+  "pr_auc": 0.31720772412412646,
+  "brier": 0.08728725950786932,
+  "tn": 1653,
+  "fp": 162,
+  "fn": 124,
+  "tp": 101
+}
+Best threshold: 0.29000000000000004
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H6m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.19,
+  "pred_positive_rate": 0.2485294117647059,
+  "acc": 0.8156862745098039,
+  "precision": 0.534516765285996,
+  "recall": 0.6593673965936739,
+  "f1": 0.5904139433551198,
+  "auc": 0.7737674360249672,
+  "pr_auc": 0.6086673755589892,
+  "brier": 0.1218578667542341,
+  "tn": 1393,
+  "fp": 236,
+  "fn": 140,
+  "tp": 271
+}
+Best threshold: 0.19
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H6m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.2,
+  "pred_positive_rate": 0.2338235294117647,
+  "acc": 0.7745098039215687,
+  "precision": 0.2976939203354298,
+  "recall": 0.5318352059925093,
+  "f1": 0.3817204301075269,
+  "auc": 0.720703393178155,
+  "pr_auc": 0.3158175278784439,
+  "brier": 0.10508056357866292,
+  "tn": 1438,
+  "fp": 335,
+  "fn": 125,
+  "tp": 142
+}
+Best threshold: 0.2
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H6m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.12156862745098039,
+  "acc": 0.8691176470588236,
+  "precision": 0.4153225806451613,
+  "recall": 0.4577777777777778,
+  "f1": 0.4355179704016913,
+  "auc": 0.7862773186409551,
+  "pr_auc": 0.3305618069737976,
+  "brier": 0.08614146257711142,
+  "tn": 1670,
+  "fp": 145,
+  "fn": 122,
+  "tp": 103
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H6m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.25,
+  "pred_positive_rate": 0.18872549019607843,
+  "acc": 0.842156862745098,
+  "precision": 0.6155844155844156,
+  "recall": 0.5766423357664233,
+  "f1": 0.5954773869346733,
+  "auc": 0.7751400632394302,
+  "pr_auc": 0.6065431997820435,
+  "brier": 0.12236370529384498,
+  "tn": 1481,
+  "fp": 148,
+  "fn": 174,
+  "tp": 237
+}
+Best threshold: 0.25
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H6m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.3176470588235294,
+  "acc": 0.7269607843137255,
+  "precision": 0.2762345679012346,
+  "recall": 0.6704119850187266,
+  "f1": 0.3912568306010929,
+  "auc": 0.7122241445232378,
+  "pr_auc": 0.3263508648801977,
+  "brier": 0.10476422873318059,
+  "tn": 1304,
+  "fp": 469,
+  "fn": 88,
+  "tp": 179
+}
+Best threshold: 0.14
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H6m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.3,
+  "pred_positive_rate": 0.11862745098039215,
+  "acc": 0.871078431372549,
+  "precision": 0.4214876033057851,
+  "recall": 0.4533333333333333,
+  "f1": 0.436830835117773,
+  "auc": 0.806232017141108,
+  "pr_auc": 0.33649802414637797,
+  "brier": 0.08518066585109572,
+  "tn": 1675,
+  "fp": 140,
+  "fn": 123,
+  "tp": 102
+}
+Best threshold: 0.3
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H6m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.1769607843137255,
+  "acc": 0.8509803921568627,
+  "precision": 0.6481994459833795,
+  "recall": 0.5693430656934306,
+  "f1": 0.6062176165803108,
+  "auc": 0.8150030096233265,
+  "pr_auc": 0.6192430924330777,
+  "brier": 0.11935755516684819,
+  "tn": 1502,
+  "fp": 127,
+  "fn": 177,
+  "tp": 234
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H6m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.24000000000000002,
+  "pred_positive_rate": 0.17647058823529413,
+  "acc": 0.8161764705882353,
+  "precision": 0.35,
+  "recall": 0.47191011235955055,
+  "f1": 0.40191387559808617,
+  "auc": 0.7208850611862077,
+  "pr_auc": 0.35405199650988356,
+  "brier": 0.10170006566034562,
+  "tn": 1539,
+  "fp": 234,
+  "fn": 141,
+  "tp": 126
+}
+Best threshold: 0.24000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H6m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.34,
+  "pred_positive_rate": 0.09852941176470588,
+  "acc": 0.8862745098039215,
+  "precision": 0.48258706467661694,
+  "recall": 0.4311111111111111,
+  "f1": 0.45539906103286387,
+  "auc": 0.8071919191919192,
+  "pr_auc": 0.35806239590147004,
+  "brier": 0.08320993552336392,
+  "tn": 1711,
+  "fp": 104,
+  "fn": 128,
+  "tp": 97
+}
+Best threshold: 0.34
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H6m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.21000000000000002,
+  "pred_positive_rate": 0.23529411764705882,
+  "acc": 0.8240196078431372,
+  "precision": 0.5541666666666667,
+  "recall": 0.6472019464720195,
+  "f1": 0.5970819304152638,
+  "auc": 0.794767586879536,
+  "pr_auc": 0.5930543677243523,
+  "brier": 0.12202763443966111,
+  "tn": 1415,
+  "fp": 214,
+  "fn": 145,
+  "tp": 266
+}
+Best threshold: 0.21000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H6m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=6m, fold=1
+Train: (977160, 282) Counter({0: 824993, 1: 152167})
+Valid: (2040, 282) Counter({0: 1773, 1: 267})
+Valid metrics: {
+  "positive_rate": 0.13088235294117648,
+  "threshold": 0.2,
+  "pred_positive_rate": 0.21911764705882353,
+  "acc": 0.7862745098039216,
+  "precision": 0.31096196868008946,
+  "recall": 0.5205992509363296,
+  "f1": 0.3893557422969188,
+  "auc": 0.7214300652103653,
+  "pr_auc": 0.35510785901918424,
+  "brier": 0.10192257840656868,
+  "tn": 1465,
+  "fp": 308,
+  "fn": 128,
+  "tp": 139
+}
+Best threshold: 0.2
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H6m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=6m, fold=2
+Train: (1039210, 282) Counter({0: 877500, 1: 161710})
+Valid: (2040, 282) Counter({0: 1815, 1: 225})
+Valid metrics: {
+  "positive_rate": 0.11029411764705882,
+  "threshold": 0.35000000000000003,
+  "pred_positive_rate": 0.10245098039215686,
+  "acc": 0.8823529411764706,
+  "precision": 0.46411483253588515,
+  "recall": 0.4311111111111111,
+  "f1": 0.4470046082949308,
+  "auc": 0.8096651362105909,
+  "pr_auc": 0.349052194066878,
+  "brier": 0.08458433028409584,
+  "tn": 1703,
+  "fp": 112,
+  "fn": 128,
+  "tp": 97
+}
+Best threshold: 0.35000000000000003
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H6m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=6m, fold=3
+Train: (1101260, 282) Counter({0: 931722, 1: 169538})
+Valid: (2040, 282) Counter({0: 1629, 1: 411})
+Valid metrics: {
+  "positive_rate": 0.20147058823529412,
+  "threshold": 0.24000000000000002,
+  "pred_positive_rate": 0.20490196078431372,
+  "acc": 0.8299019607843138,
+  "precision": 0.5765550239234449,
+  "recall": 0.5863746958637469,
+  "f1": 0.5814234016887817,
+  "auc": 0.7936145202750035,
+  "pr_auc": 0.5809166501387562,
+  "brier": 0.12373037327259229,
+  "tn": 1452,
+  "fp": 177,
+  "fn": 170,
+  "tp": 241
+}
+Best threshold: 0.24000000000000002
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H6m_fold3.csv
+
+####################################################################################################
+Load horizon 12m dataset
+X: (1219070, 282)
+region samples: 1219070
+y all: Counter({0: 909275, 1: 309795})
+y region: Counter({0: 909275, 1: 309795})
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.3073529411764706,
+  "acc": 0.7696078431372549,
+  "precision": 0.4944178628389155,
+  "recall": 0.6695464362850972,
+  "f1": 0.5688073394495414,
+  "auc": 0.7433517176584021,
+  "pr_auc": 0.4933563883121458,
+  "brier": 0.14438369145683186,
+  "tn": 1260,
+  "fp": 317,
+  "fn": 153,
+  "tp": 310
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H12m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.2676470588235294,
+  "acc": 0.8112745098039216,
+  "precision": 0.5311355311355311,
+  "recall": 0.6921241050119332,
+  "f1": 0.6010362694300518,
+  "auc": 0.8229937028764766,
+  "pr_auc": 0.6062630169614656,
+  "brier": 0.12348482897065169,
+  "tn": 1365,
+  "fp": 256,
+  "fn": 129,
+  "tp": 290
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H12m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg0_depth12_leaf5, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.35000000000000003,
+  "pred_positive_rate": 0.24215686274509804,
+  "acc": 0.8220588235294117,
+  "precision": 0.728744939271255,
+  "recall": 0.6112054329371817,
+  "f1": 0.6648199445983379,
+  "auc": 0.8137775130786215,
+  "pr_auc": 0.682254607951933,
+  "brier": 0.14990699765510154,
+  "tn": 1317,
+  "fp": 134,
+  "fn": 229,
+  "tp": 360
+}
+Best threshold: 0.35000000000000003
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg0_depth12_leaf5_H12m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.30686274509803924,
+  "acc": 0.7642156862745098,
+  "precision": 0.48562300319488816,
+  "recall": 0.6565874730021598,
+  "f1": 0.5583103764921947,
+  "auc": 0.7399085942496826,
+  "pr_auc": 0.49343407595900746,
+  "brier": 0.14497584382039203,
+  "tn": 1255,
+  "fp": 322,
+  "fn": 159,
+  "tp": 304
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H12m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.2754901960784314,
+  "acc": 0.7965686274509803,
+  "precision": 0.50355871886121,
+  "recall": 0.6754176610978521,
+  "f1": 0.5769622833843017,
+  "auc": 0.8216332768452251,
+  "pr_auc": 0.6075419688134782,
+  "brier": 0.12216923396617387,
+  "tn": 1342,
+  "fp": 279,
+  "fn": 136,
+  "tp": 283
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H12m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg1_depth16_leaf5, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.35000000000000003,
+  "pred_positive_rate": 0.24950980392156863,
+  "acc": 0.8215686274509804,
+  "precision": 0.7210216110019646,
+  "recall": 0.6230899830220713,
+  "f1": 0.6684881602914389,
+  "auc": 0.8164616873323123,
+  "pr_auc": 0.6849262201891463,
+  "brier": 0.1483809747875644,
+  "tn": 1309,
+  "fp": 142,
+  "fn": 222,
+  "tp": 367
+}
+Best threshold: 0.35000000000000003
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg1_depth16_leaf5_H12m_fold3.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.34,
+  "pred_positive_rate": 0.25441176470588234,
+  "acc": 0.7784313725490196,
+  "precision": 0.5105973025048169,
+  "recall": 0.572354211663067,
+  "f1": 0.5397148676171081,
+  "auc": 0.7199962747431695,
+  "pr_auc": 0.4712790132126593,
+  "brier": 0.1517088757692609,
+  "tn": 1323,
+  "fp": 254,
+  "fn": 198,
+  "tp": 265
+}
+Best threshold: 0.34
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H12m_fold1.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.32,
+  "pred_positive_rate": 0.24166666666666667,
+  "acc": 0.7980392156862746,
+  "precision": 0.5070993914807302,
+  "recall": 0.5966587112171837,
+  "f1": 0.5482456140350878,
+  "auc": 0.7968732286119384,
+  "pr_auc": 0.5681366672334753,
+  "brier": 0.12616010237317796,
+  "tn": 1378,
+  "fp": 243,
+  "fn": 169,
+  "tp": 250
+}
+Best threshold: 0.32
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H12m_fold2.csv
+
+====================================================================================================
+Model=ExtraTrees, Config=et_cfg2_depth18_leaf10_mf050, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.34,
+  "pred_positive_rate": 0.271078431372549,
+  "acc": 0.8225490196078431,
+  "precision": 0.705244122965642,
+  "recall": 0.6621392190152802,
+  "f1": 0.6830122591943959,
+  "auc": 0.7921836003271556,
+  "pr_auc": 0.6787037872356659,
+  "brier": 0.14847274899889476,
+  "tn": 1288,
+  "fp": 163,
+  "fn": 199,
+  "tp": 390
+}
+Best threshold: 0.34
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_ExtraTrees_et_cfg2_depth18_leaf10_mf050_H12m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.29000000000000004,
+  "pred_positive_rate": 0.2901960784313726,
+  "acc": 0.7661764705882353,
+  "precision": 0.48817567567567566,
+  "recall": 0.6241900647948164,
+  "f1": 0.547867298578199,
+  "auc": 0.7366106462909727,
+  "pr_auc": 0.47530725850902406,
+  "brier": 0.15017762887113836,
+  "tn": 1274,
+  "fp": 303,
+  "fn": 174,
+  "tp": 289
+}
+Best threshold: 0.29000000000000004
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H12m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.23284313725490197,
+  "acc": 0.803921568627451,
+  "precision": 0.52,
+  "recall": 0.5894988066825776,
+  "f1": 0.5525727069351232,
+  "auc": 0.8068033080142933,
+  "pr_auc": 0.58895968463728,
+  "brier": 0.12146576920344375,
+  "tn": 1393,
+  "fp": 228,
+  "fn": 172,
+  "tp": 247
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H12m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg4_strong_reg, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.307843137254902,
+  "acc": 0.7848039215686274,
+  "precision": 0.6194267515923567,
+  "recall": 0.6604414261460102,
+  "f1": 0.6392769104354972,
+  "auc": 0.7846295336393495,
+  "pr_auc": 0.6795632796886751,
+  "brier": 0.15212454531159816,
+  "tn": 1212,
+  "fp": 239,
+  "fn": 200,
+  "tp": 389
+}
+Best threshold: 0.27
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg4_strong_reg_H12m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.26,
+  "pred_positive_rate": 0.32794117647058824,
+  "acc": 0.7509803921568627,
+  "precision": 0.4663677130044843,
+  "recall": 0.673866090712743,
+  "f1": 0.5512367491166078,
+  "auc": 0.7401797710336628,
+  "pr_auc": 0.48052849755638166,
+  "brier": 0.14950656912885588,
+  "tn": 1220,
+  "fp": 357,
+  "fn": 151,
+  "tp": 312
+}
+Best threshold: 0.26
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H12m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.32,
+  "pred_positive_rate": 0.18529411764705883,
+  "acc": 0.821078431372549,
+  "precision": 0.5714285714285714,
+  "recall": 0.5155131264916468,
+  "f1": 0.5420326223337516,
+  "auc": 0.7763505246621388,
+  "pr_auc": 0.5644862668943041,
+  "brier": 0.12481186875537008,
+  "tn": 1459,
+  "fp": 162,
+  "fn": 203,
+  "tp": 216
+}
+Best threshold: 0.32
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H12m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg8_recall_depth3, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.25,
+  "pred_positive_rate": 0.3235294117647059,
+  "acc": 0.7769607843137255,
+  "precision": 0.6015151515151516,
+  "recall": 0.6740237691001698,
+  "f1": 0.6357085668534828,
+  "auc": 0.7803341527826368,
+  "pr_auc": 0.6729700685888688,
+  "brier": 0.15360101626052727,
+  "tn": 1188,
+  "fp": 263,
+  "fn": 192,
+  "tp": 397
+}
+Best threshold: 0.25
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg8_recall_depth3_H12m_fold3.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.2980392156862745,
+  "acc": 0.7544117647058823,
+  "precision": 0.46875,
+  "recall": 0.6155507559395248,
+  "f1": 0.5322128851540616,
+  "auc": 0.7283917984088222,
+  "pr_auc": 0.45236255961134175,
+  "brier": 0.15494782894104564,
+  "tn": 1254,
+  "fp": 323,
+  "fn": 178,
+  "tp": 285
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H12m_fold1.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.39,
+  "pred_positive_rate": 0.14950980392156862,
+  "acc": 0.8362745098039216,
+  "precision": 0.639344262295082,
+  "recall": 0.46539379474940334,
+  "f1": 0.5386740331491713,
+  "auc": 0.7822942907748687,
+  "pr_auc": 0.5719228621273802,
+  "brier": 0.12422048294853062,
+  "tn": 1511,
+  "fp": 110,
+  "fn": 224,
+  "tp": 195
+}
+Best threshold: 0.39
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H12m_fold2.csv
+
+====================================================================================================
+Model=XGBoost, Config=xgb_cfg9_depth4_reg, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.29000000000000004,
+  "pred_positive_rate": 0.2867647058823529,
+  "acc": 0.7892156862745098,
+  "precision": 0.6358974358974359,
+  "recall": 0.631578947368421,
+  "f1": 0.6337308347529812,
+  "auc": 0.7774873367585613,
+  "pr_auc": 0.6797685198322911,
+  "brier": 0.15294502275004287,
+  "tn": 1238,
+  "fp": 213,
+  "fn": 217,
+  "tp": 372
+}
+Best threshold: 0.29000000000000004
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_XGBoost_xgb_cfg9_depth4_reg_H12m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.3176470588235294,
+  "acc": 0.7583333333333333,
+  "precision": 0.47685185185185186,
+  "recall": 0.6673866090712743,
+  "f1": 0.5562556255625563,
+  "auc": 0.7310898704514546,
+  "pr_auc": 0.49107376063396047,
+  "brier": 0.15099307876070175,
+  "tn": 1238,
+  "fp": 339,
+  "fn": 154,
+  "tp": 309
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H12m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.31,
+  "pred_positive_rate": 0.19509803921568628,
+  "acc": 0.817156862745098,
+  "precision": 0.5577889447236181,
+  "recall": 0.5298329355608592,
+  "f1": 0.5434516523867808,
+  "auc": 0.7834949698100264,
+  "pr_auc": 0.5852122388296459,
+  "brier": 0.12302193246648625,
+  "tn": 1445,
+  "fp": 176,
+  "fn": 197,
+  "tp": 222
+}
+Best threshold: 0.31
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H12m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg0_depth4_lr003, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.31,
+  "pred_positive_rate": 0.25882352941176473,
+  "acc": 0.7867647058823529,
+  "precision": 0.6458333333333334,
+  "recall": 0.5789473684210527,
+  "f1": 0.6105640107430618,
+  "auc": 0.7706037285918381,
+  "pr_auc": 0.6728730156295143,
+  "brier": 0.15556035804227386,
+  "tn": 1264,
+  "fp": 187,
+  "fn": 248,
+  "tp": 341
+}
+Best threshold: 0.31
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg0_depth4_lr003_H12m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.33,
+  "pred_positive_rate": 0.27205882352941174,
+  "acc": 0.7794117647058824,
+  "precision": 0.5117117117117117,
+  "recall": 0.6133909287257019,
+  "f1": 0.5579567779960707,
+  "auc": 0.7398113540897705,
+  "pr_auc": 0.4951670986287413,
+  "brier": 0.1488791242734478,
+  "tn": 1306,
+  "fp": 271,
+  "fn": 179,
+  "tp": 284
+}
+Best threshold: 0.33
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H12m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.36000000000000004,
+  "pred_positive_rate": 0.17058823529411765,
+  "acc": 0.8240196078431372,
+  "precision": 0.5862068965517241,
+  "recall": 0.48687350835322196,
+  "f1": 0.5319426336375489,
+  "auc": 0.7830893449489766,
+  "pr_auc": 0.5825225974728234,
+  "brier": 0.12419915765035153,
+  "tn": 1477,
+  "fp": 144,
+  "fn": 215,
+  "tp": 204
+}
+Best threshold: 0.36000000000000004
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H12m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg1_depth5_lr002, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.2818627450980392,
+  "acc": 0.7823529411764706,
+  "precision": 0.6260869565217392,
+  "recall": 0.6112054329371817,
+  "f1": 0.618556701030928,
+  "auc": 0.7873382796712998,
+  "pr_auc": 0.6815566627274723,
+  "brier": 0.15171641592450422,
+  "tn": 1236,
+  "fp": 215,
+  "fn": 229,
+  "tp": 360
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg1_depth5_lr002_H12m_fold3.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=12m, fold=1
+Train: (961775, 282) Counter({0: 714587, 1: 247188})
+Valid: (2040, 282) Counter({0: 1577, 1: 463})
+Valid metrics: {
+  "positive_rate": 0.2269607843137255,
+  "threshold": 0.3,
+  "pred_positive_rate": 0.2911764705882353,
+  "acc": 0.7651960784313725,
+  "precision": 0.48653198653198654,
+  "recall": 0.6241900647948164,
+  "f1": 0.5468306527909177,
+  "auc": 0.7320499458331222,
+  "pr_auc": 0.48818669562484307,
+  "brier": 0.15319000676878303,
+  "tn": 1272,
+  "fp": 305,
+  "fn": 174,
+  "tp": 289
+}
+Best threshold: 0.3
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H12m_fold1.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=12m, fold=2
+Train: (1023825, 282) Counter({0: 760990, 1: 262835})
+Valid: (2040, 282) Counter({0: 1621, 1: 419})
+Valid metrics: {
+  "positive_rate": 0.2053921568627451,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.2196078431372549,
+  "acc": 0.7985294117647059,
+  "precision": 0.5089285714285714,
+  "recall": 0.5441527446300716,
+  "f1": 0.5259515570934256,
+  "auc": 0.7714373843306601,
+  "pr_auc": 0.5684082874335132,
+  "brier": 0.12661753230668,
+  "tn": 1401,
+  "fp": 220,
+  "fn": 191,
+  "tp": 228
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H12m_fold2.csv
+
+====================================================================================================
+Model=CatBoost, Config=cat_cfg2_depth6_lr003, H=12m, fold=3
+Train: (1085875, 282) Counter({0: 809028, 1: 276847})
+Valid: (2040, 282) Counter({0: 1451, 1: 589})
+Valid metrics: {
+  "positive_rate": 0.2887254901960784,
+  "threshold": 0.28,
+  "pred_positive_rate": 0.28774509803921566,
+  "acc": 0.7676470588235295,
+  "precision": 0.5979557069846678,
+  "recall": 0.5959252971137521,
+  "f1": 0.596938775510204,
+  "auc": 0.7714181075284418,
+  "pr_auc": 0.6604015135533263,
+  "brier": 0.15677997118839818,
+  "tn": 1215,
+  "fp": 236,
+  "fn": 238,
+  "tp": 351
+}
+Best threshold: 0.28
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/threshold_search/threshold_search_CatBoost_cat_cfg2_depth6_lr003_H12m_fold3.csv
+
+####################################################################################################
+TUNING SUMMARY
+####################################################################################################
+model_name                  config_name  composite_rank  mean_valid_brier  mean_valid_f1  mean_valid_pr_auc  mean_valid_auc  mean_valid_acc  n_runs
+  CatBoost        cat_cfg1_depth5_lr002            1.05          0.085431       0.414705           0.370374        0.782475        0.851675      12
+  CatBoost        cat_cfg0_depth4_lr003            2.05          0.086267       0.412230           0.366338        0.780317        0.848407      12
+  CatBoost        cat_cfg2_depth6_lr003            2.90          0.086659       0.408740           0.364358        0.777317        0.855188      12
+ExtraTrees        et_cfg0_depth12_leaf5            1.40          0.084882       0.423708           0.369324        0.796321        0.848775      12
+ExtraTrees        et_cfg1_depth16_leaf5            1.60          0.084548       0.419751           0.368252        0.794182        0.851675      12
+ExtraTrees et_cfg2_depth18_leaf10_mf050            3.00          0.086587       0.403895           0.353670        0.775119        0.842729      12
+   XGBoost          xgb_cfg4_strong_reg            1.05          0.085993       0.408095           0.361697        0.777675        0.850163      12
+   XGBoost       xgb_cfg8_recall_depth3            2.35          0.086403       0.405419           0.358553        0.770406        0.849265      12
+   XGBoost          xgb_cfg9_depth4_reg            2.60          0.086639       0.405194           0.360337        0.770836        0.853595      12
+
+Selected configs:
+[
+  {
+    "model_name": "CatBoost",
+    "config_name": "cat_cfg1_depth5_lr002",
+    "params": {
+      "iterations": 800,
+      "depth": 5,
+      "learning_rate": 0.02,
+      "l2_leaf_reg": 10.0,
+      "random_strength": 1.0,
+      "bootstrap_type": "Bernoulli",
+      "subsample": 0.85
+    }
+  },
+  {
+    "model_name": "ExtraTrees",
+    "config_name": "et_cfg0_depth12_leaf5",
+    "params": {
+      "n_estimators": 500,
+      "max_depth": 12,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "bootstrap": false
+    }
+  },
+  {
+    "model_name": "XGBoost",
+    "config_name": "xgb_cfg4_strong_reg",
+    "params": {
+      "n_estimators": 500,
+      "max_depth": 3,
+      "learning_rate": 0.03,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 8.0,
+      "reg_alpha": 0.8,
+      "min_child_weight": 5.0,
+      "gamma": 0.2
+    }
+  }
+]
+
+Pooled thresholds:
+model_name           config_name  horizon_month  pooled_threshold  pooled_inner_valid_positive_rate  pooled_inner_valid_threshold  pooled_inner_valid_pred_positive_rate  pooled_inner_valid_acc  pooled_inner_valid_precision  pooled_inner_valid_recall  pooled_inner_valid_f1  pooled_inner_valid_auc  pooled_inner_valid_pr_auc  pooled_inner_valid_brier  pooled_inner_valid_tn  pooled_inner_valid_fp  pooled_inner_valid_fn  pooled_inner_valid_tp
+  CatBoost cat_cfg1_depth5_lr002              1              0.13                          0.032843                          0.13                               0.042974                0.941176                      0.197719                   0.258706               0.224138                0.802843                   0.178377                  0.030608                   5708                    211                    149                     52
+  CatBoost cat_cfg1_depth5_lr002              3              0.18                          0.085294                          0.18                               0.127451                0.872876                      0.335897                   0.501916               0.402458                0.788384                   0.329442                  0.067204                   5080                    518                    260                    262
+  CatBoost cat_cfg1_depth5_lr002              6              0.27                          0.147549                          0.27                               0.152451                0.846405                      0.480171                   0.496124               0.488017                0.774268                   0.449734                  0.102313                   4732                    485                    455                    448
+  CatBoost cat_cfg1_depth5_lr002             12              0.29                          0.240359                          0.29                               0.263725                0.783824                      0.545849                   0.598912               0.571151                0.768725                   0.588651                  0.141598                   3916                    733                    590                    881
+ExtraTrees et_cfg0_depth12_leaf5              1              0.12                          0.032843                          0.12                               0.039052                0.944118                      0.205021                   0.243781               0.222727                0.808078                   0.181444                  0.029319                   5729                    190                    152                     49
+ExtraTrees et_cfg0_depth12_leaf5              3              0.18                          0.085294                          0.18                               0.137418                0.864542                      0.317479                   0.511494               0.391783                0.799162                   0.319372                  0.067739                   5024                    574                    255                    267
+ExtraTrees et_cfg0_depth12_leaf5              6              0.23                          0.147549                          0.23                               0.192974                0.828431                      0.437765                   0.572536               0.496161                0.795045                   0.442966                  0.103211                   4553                    664                    386                    517
+ExtraTrees et_cfg0_depth12_leaf5             12              0.30                          0.240359                          0.30                               0.270588                0.799510                      0.573671                   0.645819               0.607611                0.791918                   0.602506                  0.139259                   3943                    706                    521                    950
+   XGBoost   xgb_cfg4_strong_reg              1              0.13                          0.032843                          0.13                               0.044771                0.940359                      0.200730                   0.273632               0.231579                0.798968                   0.170538                  0.030038                   5700                    219                    146                     55
+   XGBoost   xgb_cfg4_strong_reg              3              0.14                          0.085294                          0.14                               0.179248                0.834150                      0.275296                   0.578544               0.373070                0.775494                   0.299525                  0.068793                   4803                    795                    220                    302
+   XGBoost   xgb_cfg4_strong_reg              6              0.22                          0.147549                          0.22                               0.204248                0.814869                      0.408000                   0.564784               0.473758                0.762608                   0.438139                  0.103884                   4477                    740                    393                    510
+   XGBoost   xgb_cfg4_strong_reg             12              0.27                          0.240359                          0.27                               0.287418                0.779412                      0.534395                   0.639021               0.582043                0.772653                   0.583982                  0.141256                   3830                    819                    531                    940
+
+####################################################################################################
+Final test: H=1m
+Train: (1238365, 282) Counter({0: 1196758, 1: 41607})
+Test: (9095, 282) Counter({0: 8777, 1: 318})
+
+====================================================================================================
+Final model=CatBoost, config=cat_cfg1_depth5_lr002, H=1m
+threshold: 0.13
+Metrics: {
+  "positive_rate": 0.03496426608026388,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.030786146234194612,
+  "acc": 0.9454645409565695,
+  "precision": 0.18214285714285713,
+  "recall": 0.16037735849056603,
+  "f1": 0.1705685618729097,
+  "auc": 0.8135890474173854,
+  "pr_auc": 0.12850181010020478,
+  "brier": 0.032324006530708015,
+  "tn": 8548,
+  "fp": 229,
+  "fn": 267,
+  "tp": 51
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_catboost_H1m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/catboost_binary_m5_H1m.joblib
+
+====================================================================================================
+Final model=ExtraTrees, config=et_cfg0_depth12_leaf5, H=1m
+threshold: 0.12
+Metrics: {
+  "positive_rate": 0.03496426608026388,
+  "threshold": 0.12,
+  "pred_positive_rate": 0.06388125343595383,
+  "acc": 0.9218251786695987,
+  "precision": 0.16179001721170397,
+  "recall": 0.29559748427672955,
+  "f1": 0.20912124582869854,
+  "auc": 0.8161737044290287,
+  "pr_auc": 0.13313582131168758,
+  "brier": 0.03192658700261554,
+  "tn": 8290,
+  "fp": 487,
+  "fn": 224,
+  "tp": 94
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_extratrees_H1m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/extratrees_binary_m5_H1m.joblib
+
+====================================================================================================
+Final model=XGBoost, config=xgb_cfg4_strong_reg, H=1m
+threshold: 0.13
+Metrics: {
+  "positive_rate": 0.03496426608026388,
+  "threshold": 0.13,
+  "pred_positive_rate": 0.028587135788894998,
+  "acc": 0.9461242440901594,
+  "precision": 0.16923076923076924,
+  "recall": 0.13836477987421383,
+  "f1": 0.15224913494809686,
+  "auc": 0.8006886925017717,
+  "pr_auc": 0.12485476922846692,
+  "brier": 0.03232887576946586,
+  "tn": 8561,
+  "fp": 216,
+  "fn": 274,
+  "tp": 44
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_xgboost_H1m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/xgboost_binary_m5_H1m.joblib
+
+####################################################################################################
+Final test: H=3m
+Train: (1233180, 282) Counter({0: 1124601, 1: 108579})
+Test: (9095, 282) Counter({0: 8272, 1: 823})
+
+====================================================================================================
+Final model=CatBoost, config=cat_cfg1_depth5_lr002, H=3m
+threshold: 0.18000000000000002
+Metrics: {
+  "positive_rate": 0.09048927982407916,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.12435404068169324,
+  "acc": 0.8575041231445849,
+  "precision": 0.29089301503094606,
+  "recall": 0.3997569866342649,
+  "f1": 0.3367451381780962,
+  "auc": 0.811683296473956,
+  "pr_auc": 0.2700716611638938,
+  "brier": 0.07394622728569317,
+  "tn": 7470,
+  "fp": 802,
+  "fn": 494,
+  "tp": 329
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_catboost_H3m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/catboost_binary_m5_H3m.joblib
+
+====================================================================================================
+Final model=ExtraTrees, config=et_cfg0_depth12_leaf5, H=3m
+threshold: 0.18000000000000002
+Metrics: {
+  "positive_rate": 0.09048927982407916,
+  "threshold": 0.18000000000000002,
+  "pred_positive_rate": 0.1440351841671248,
+  "acc": 0.8558548653106103,
+  "precision": 0.3137404580152672,
+  "recall": 0.4993924665856622,
+  "f1": 0.38537271448663857,
+  "auc": 0.8194325790674775,
+  "pr_auc": 0.29779478682713784,
+  "brier": 0.0718404090083363,
+  "tn": 7373,
+  "fp": 899,
+  "fn": 412,
+  "tp": 411
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_extratrees_H3m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/extratrees_binary_m5_H3m.joblib
+
+====================================================================================================
+Final model=XGBoost, config=xgb_cfg4_strong_reg, H=3m
+threshold: 0.14
+Metrics: {
+  "positive_rate": 0.09048927982407916,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.14260582737768004,
+  "acc": 0.8489279824079164,
+  "precision": 0.28758673862760215,
+  "recall": 0.4532199270959903,
+  "f1": 0.3518867924528302,
+  "auc": 0.8041472968875958,
+  "pr_auc": 0.2637830650723957,
+  "brier": 0.0746640726102495,
+  "tn": 7348,
+  "fp": 924,
+  "fn": 450,
+  "tp": 373
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_xgboost_H3m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/xgboost_binary_m5_H3m.joblib
+
+####################################################################################################
+Final test: H=6m
+Train: (1225360, 282) Counter({0: 1035867, 1: 189493})
+Test: (9095, 282) Counter({0: 7697, 1: 1398})
+
+====================================================================================================
+Final model=CatBoost, config=cat_cfg1_depth5_lr002, H=6m
+threshold: 0.27
+Metrics: {
+  "positive_rate": 0.1537108301264431,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.1747113798790544,
+  "acc": 0.8288070368334249,
+  "precision": 0.4499685336689742,
+  "recall": 0.5114449213161659,
+  "f1": 0.4787412119183127,
+  "auc": 0.82208747513802,
+  "pr_auc": 0.4186056238228322,
+  "brier": 0.10751280412632941,
+  "tn": 6823,
+  "fp": 874,
+  "fn": 683,
+  "tp": 715
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_catboost_H6m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/catboost_binary_m5_H6m.joblib
+
+====================================================================================================
+Final model=ExtraTrees, config=et_cfg0_depth12_leaf5, H=6m
+threshold: 0.23
+Metrics: {
+  "positive_rate": 0.1537108301264431,
+  "threshold": 0.23,
+  "pred_positive_rate": 0.19615173172072567,
+  "acc": 0.8251786695986806,
+  "precision": 0.4461883408071749,
+  "recall": 0.5693848354792561,
+  "f1": 0.5003142677561282,
+  "auc": 0.8222022477590529,
+  "pr_auc": 0.43482671303640497,
+  "brier": 0.10590764163477867,
+  "tn": 6709,
+  "fp": 988,
+  "fn": 602,
+  "tp": 796
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_extratrees_H6m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/extratrees_binary_m5_H6m.joblib
+
+====================================================================================================
+Final model=XGBoost, config=xgb_cfg4_strong_reg, H=6m
+threshold: 0.22
+Metrics: {
+  "positive_rate": 0.1537108301264431,
+  "threshold": 0.22,
+  "pred_positive_rate": 0.18372732270478284,
+  "acc": 0.8241891148982957,
+  "precision": 0.4398563734290844,
+  "recall": 0.5257510729613734,
+  "f1": 0.4789833822091886,
+  "auc": 0.8126056767746496,
+  "pr_auc": 0.4155148156259344,
+  "brier": 0.10834553181388128,
+  "tn": 6761,
+  "fp": 936,
+  "fn": 663,
+  "tp": 735
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_xgboost_H6m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/xgboost_binary_m5_H6m.joblib
+
+####################################################################################################
+Final test: H=12m
+Train: (1209975, 282) Counter({0: 902429, 1: 307546})
+Test: (9095, 282) Counter({0: 6846, 1: 2249})
+
+====================================================================================================
+Final model=CatBoost, config=cat_cfg1_depth5_lr002, H=12m
+threshold: 0.29000000000000004
+Metrics: {
+  "positive_rate": 0.24727872457394173,
+  "threshold": 0.29000000000000004,
+  "pred_positive_rate": 0.2518966465090709,
+  "acc": 0.7992303463441451,
+  "precision": 0.5923177651680489,
+  "recall": 0.6033792796798577,
+  "f1": 0.5977973568281938,
+  "auc": 0.8266771468658061,
+  "pr_auc": 0.5783268116297006,
+  "brier": 0.13959643712019226,
+  "tn": 5912,
+  "fp": 934,
+  "fn": 892,
+  "tp": 1357
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_catboost_H12m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/catboost_binary_m5_H12m.joblib
+
+====================================================================================================
+Final model=ExtraTrees, config=et_cfg0_depth12_leaf5, H=12m
+threshold: 0.3
+Metrics: {
+  "positive_rate": 0.24727872457394173,
+  "threshold": 0.3,
+  "pred_positive_rate": 0.25574491478834527,
+  "acc": 0.7938427707531611,
+  "precision": 0.5803955288048152,
+  "recall": 0.6002667852378835,
+  "f1": 0.5901639344262295,
+  "auc": 0.8292021760052541,
+  "pr_auc": 0.6021551087854431,
+  "brier": 0.13936514745173387,
+  "tn": 5870,
+  "fp": 976,
+  "fn": 899,
+  "tp": 1350
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_extratrees_H12m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/extratrees_binary_m5_H12m.joblib
+
+====================================================================================================
+Final model=XGBoost, config=xgb_cfg4_strong_reg, H=12m
+threshold: 0.27
+Metrics: {
+  "positive_rate": 0.24727872457394173,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.25849367784496974,
+  "acc": 0.7937328202308961,
+  "precision": 0.5793279455550829,
+  "recall": 0.6056024899955536,
+  "f1": 0.5921739130434782,
+  "auc": 0.8232820910309474,
+  "pr_auc": 0.5851272797928737,
+  "brier": 0.1405556509000455,
+  "tn": 5857,
+  "fp": 989,
+  "fn": 887,
+  "tp": 1362
+}
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/predictions/predictions_test_xgboost_H12m.csv
+Saved: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison/models/xgboost_binary_m5_H12m.joblib
+Job finished at: 2026年 06月 28日 星期日 23:03:03 CST
+Output dir: PROJECT_ROOT/outputs/catboost_extratrees_xgb_binary_m5_comparison

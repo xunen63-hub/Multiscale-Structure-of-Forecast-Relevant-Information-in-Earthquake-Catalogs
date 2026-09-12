@@ -1,0 +1,387 @@
+Job started at: 2026年 06月 27日 星期六 21:15:57 CST
+Node: cnode29
+Python: ORIGINAL_PYTHON_ENV/bin/python
+ORIGINAL_PYTHON_ENV/bin/python
+Basic Python dependencies OK
+LightGBM OK: 4.6.0
+WARNING: XGBoost final metrics not found, will only output RF and LightGBM comparison.
+Checked path: PROJECT_ROOT/outputs/xgb_binary_m5_cfg4/final_test_metrics_binary_m5_cfg4.csv
+====================================================================================================
+RF and LightGBM binary M>=5 comparison on raw282 datasets
+data_dir: PROJECT_ROOT/data_raw282_final
+out_dir: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison
+horizons: [1, 3, 6, 12]
+folds: [1, 2, 3]
+models: ['rf', 'lightgbm']
+region_name: all
+patch_csv: 
+class_weight_mode: none
+n_jobs: 16
+HAS_LIGHTGBM: True
+candidate configs: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/candidate_configs_rf_lightgbm.json
+====================================================================================================
+
+####################################################################################################
+Load horizon 1m dataset
+X: (1247460, 282)
+region samples: 1247460
+y all: Counter({0: 1205535, 1: 41925})
+y region: Counter({0: 1205535, 1: 41925})
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 1, 1)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 1, 2)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 1, 3)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 1, 1)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 1, 2)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 1, 3)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 1, 1)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 1, 2)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 1, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 1, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 1, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 1, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 1, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 1, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 1, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 1, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 1, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 1, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 1, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 1, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 1, 3)
+
+####################################################################################################
+Load horizon 3m dataset
+X: (1242275, 282)
+region samples: 1242275
+y all: Counter({0: 1132873, 1: 109402})
+y region: Counter({0: 1132873, 1: 109402})
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 3, 1)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 3, 2)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 3, 3)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 3, 1)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 3, 2)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 3, 3)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 3, 1)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 3, 2)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 3, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 3, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 3, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 3, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 3, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 3, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 3, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 3, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 3, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 3, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 3, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 3, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 3, 3)
+
+####################################################################################################
+Load horizon 6m dataset
+X: (1234455, 282)
+region samples: 1234455
+y all: Counter({0: 1043564, 1: 190891})
+y region: Counter({0: 1043564, 1: 190891})
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 6, 1)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 6, 2)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 6, 3)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 6, 1)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 6, 2)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 6, 3)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 6, 1)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 6, 2)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 6, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 6, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 6, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 6, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 6, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 6, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 6, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 6, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 6, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 6, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 6, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 6, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 6, 3)
+
+####################################################################################################
+Load horizon 12m dataset
+X: (1219070, 282)
+region samples: 1219070
+y all: Counter({0: 909275, 1: 309795})
+y region: Counter({0: 909275, 1: 309795})
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 12, 1)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 12, 2)
+Skip existing: ('RF', 'rf_cfg0_depth12_leaf5', 12, 3)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 12, 1)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 12, 2)
+Skip existing: ('RF', 'rf_cfg1_depth16_leaf5', 12, 3)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 12, 1)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 12, 2)
+Skip existing: ('RF', 'rf_cfg2_depth18_leaf10', 12, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 12, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 12, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg0_xgb_like', 12, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 12, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 12, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg1_conservative', 12, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 12, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 12, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg2_leaf31', 12, 3)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 12, 1)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 12, 2)
+Skip existing: ('LightGBM', 'lgbm_cfg3_shallow_fast', 12, 3)
+
+####################################################################################################
+TUNING SUMMARY
+####################################################################################################
+model_name            config_name  composite_rank  mean_valid_brier  mean_valid_f1  mean_valid_pr_auc  mean_valid_auc  mean_valid_acc  n_runs
+  LightGBM     lgbm_cfg0_xgb_like            1.10          0.086323       0.408210           0.361521        0.775460        0.839216      12
+  LightGBM lgbm_cfg3_shallow_fast            2.50          0.087539       0.404489           0.352779        0.768186        0.850368      12
+  LightGBM lgbm_cfg1_conservative            2.80          0.087417       0.396844           0.353821        0.764809        0.831944      12
+  LightGBM       lgbm_cfg2_leaf31            3.60          0.088247       0.399589           0.350346        0.759113        0.849877      12
+        RF  rf_cfg0_depth12_leaf5            1.05          0.083892       0.419515           0.372819        0.791847        0.841748      12
+        RF  rf_cfg1_depth16_leaf5            1.95          0.084530       0.413935           0.365699        0.786539        0.850163      12
+        RF rf_cfg2_depth18_leaf10            3.00          0.091532       0.390170           0.331349        0.762268        0.832353      12
+
+Selected configs:
+[
+  {
+    "model_name": "LightGBM",
+    "config_name": "lgbm_cfg0_xgb_like",
+    "params": {
+      "n_estimators": 500,
+      "learning_rate": 0.03,
+      "num_leaves": 15,
+      "max_depth": 3,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "reg_lambda": 8.0,
+      "reg_alpha": 0.8,
+      "min_child_samples": 50,
+      "subsample_freq": 1
+    }
+  },
+  {
+    "model_name": "RF",
+    "config_name": "rf_cfg0_depth12_leaf5",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 12,
+      "min_samples_split": 10,
+      "min_samples_leaf": 5,
+      "max_features": "sqrt",
+      "bootstrap": true
+    }
+  }
+]
+
+Pooled thresholds:
+model_name           config_name  horizon_month  pooled_threshold  pooled_inner_valid_positive_rate  pooled_inner_valid_threshold  pooled_inner_valid_pred_positive_rate  pooled_inner_valid_acc  pooled_inner_valid_precision  pooled_inner_valid_recall  pooled_inner_valid_f1  pooled_inner_valid_auc  pooled_inner_valid_pr_auc  pooled_inner_valid_brier  pooled_inner_valid_tn  pooled_inner_valid_fp  pooled_inner_valid_fn  pooled_inner_valid_tp
+  LightGBM    lgbm_cfg0_xgb_like              1              0.14                          0.032843                          0.14                               0.038235                0.944935                      0.209402                   0.243781               0.225287                0.796025                   0.176325                  0.030227                   5734                    185                    152                     49
+  LightGBM    lgbm_cfg0_xgb_like              3              0.15                          0.085294                          0.15                               0.157680                0.848529                      0.290155                   0.536398               0.376597                0.774740                   0.310863                  0.068556                   4913                    685                    242                    280
+  LightGBM    lgbm_cfg0_xgb_like              6              0.23                          0.147549                          0.23                               0.191830                0.820098                      0.415673                   0.540421               0.469909                0.762636                   0.431302                  0.104520                   4531                    686                    415                    488
+  LightGBM    lgbm_cfg0_xgb_like             12              0.27                          0.240359                          0.27                               0.288562                0.779902                      0.535108                   0.642420               0.583874                0.767563                   0.582167                  0.141990                   3828                    821                    526                    945
+        RF rf_cfg0_depth12_leaf5              1              0.14                          0.032843                          0.14                               0.037255                0.945588                      0.210526                   0.238806               0.223776                0.805510                   0.182044                  0.029377                   5739                    180                    153                     48
+        RF rf_cfg0_depth12_leaf5              3              0.20                          0.085294                          0.20                               0.131046                0.868954                      0.325436                   0.500000               0.394260                0.798443                   0.333252                  0.066773                   5057                    541                    261                    261
+        RF rf_cfg0_depth12_leaf5              6              0.30                          0.147549                          0.30                               0.152778                0.850654                      0.494118                   0.511628               0.502720                0.791484                   0.446009                  0.101842                   4744                    473                    441                    462
+        RF rf_cfg0_depth12_leaf5             12              0.31                          0.240359                          0.31                               0.260621                0.796078                      0.569906                   0.617947               0.592955                0.787316                   0.597349                  0.137576                   3963                    686                    562                    909
+
+####################################################################################################
+Final test: H=1m
+Train: (1238365, 282) Counter({0: 1196758, 1: 41607})
+Test: (9095, 282) Counter({0: 8777, 1: 318})
+
+====================================================================================================
+Final model=LightGBM, config=lgbm_cfg0_xgb_like, H=1m
+threshold: 0.14
+Metrics: {
+  "positive_rate": 0.03496426608026388,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.020780648708081363,
+  "acc": 0.9515118196811435,
+  "precision": 0.1746031746031746,
+  "recall": 0.10377358490566038,
+  "f1": 0.1301775147928994,
+  "auc": 0.8037960851080905,
+  "pr_auc": 0.12573470693398311,
+  "brier": 0.032313165448172664,
+  "tn": 8621,
+  "fp": 156,
+  "fn": 285,
+  "tp": 33
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_lightgbm_H1m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/lightgbm_binary_m5_H1m.joblib
+
+====================================================================================================
+Final model=RF, config=rf_cfg0_depth12_leaf5, H=1m
+threshold: 0.14
+Metrics: {
+  "positive_rate": 0.03496426608026388,
+  "threshold": 0.14,
+  "pred_positive_rate": 0.07740516767454646,
+  "acc": 0.9094007696536559,
+  "precision": 0.140625,
+  "recall": 0.3113207547169811,
+  "f1": 0.19373776908023482,
+  "auc": 0.8099094760964012,
+  "pr_auc": 0.12892293283031753,
+  "brier": 0.03261021932996292,
+  "tn": 8172,
+  "fp": 605,
+  "fn": 219,
+  "tp": 99
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_rf_H1m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/rf_binary_m5_H1m.joblib
+
+####################################################################################################
+Final test: H=3m
+Train: (1233180, 282) Counter({0: 1124601, 1: 108579})
+Test: (9095, 282) Counter({0: 8272, 1: 823})
+
+====================================================================================================
+Final model=LightGBM, config=lgbm_cfg0_xgb_like, H=3m
+threshold: 0.15000000000000002
+Metrics: {
+  "positive_rate": 0.09048927982407916,
+  "threshold": 0.15000000000000002,
+  "pred_positive_rate": 0.13743815283122596,
+  "acc": 0.851676745464541,
+  "precision": 0.2896,
+  "recall": 0.4398541919805589,
+  "f1": 0.3492522913651712,
+  "auc": 0.8051138273194968,
+  "pr_auc": 0.26995279029739894,
+  "brier": 0.07428853482660411,
+  "tn": 7384,
+  "fp": 888,
+  "fn": 461,
+  "tp": 362
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_lightgbm_H3m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/lightgbm_binary_m5_H3m.joblib
+
+====================================================================================================
+Final model=RF, config=rf_cfg0_depth12_leaf5, H=3m
+threshold: 0.2
+Metrics: {
+  "positive_rate": 0.09048927982407916,
+  "threshold": 0.2,
+  "pred_positive_rate": 0.15184167124793843,
+  "acc": 0.8476085761407367,
+  "precision": 0.2961622013034033,
+  "recall": 0.49696233292831105,
+  "f1": 0.37114337568058076,
+  "auc": 0.8153809363770327,
+  "pr_auc": 0.29567966671681223,
+  "brier": 0.07174370134235965,
+  "tn": 7300,
+  "fp": 972,
+  "fn": 414,
+  "tp": 409
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_rf_H3m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/rf_binary_m5_H3m.joblib
+
+####################################################################################################
+Final test: H=6m
+Train: (1225360, 282) Counter({0: 1035867, 1: 189493})
+Test: (9095, 282) Counter({0: 7697, 1: 1398})
+
+====================================================================================================
+Final model=LightGBM, config=lgbm_cfg0_xgb_like, H=6m
+threshold: 0.23
+Metrics: {
+  "positive_rate": 0.1537108301264431,
+  "threshold": 0.23,
+  "pred_positive_rate": 0.17976910390324355,
+  "acc": 0.8239692138537658,
+  "precision": 0.4379204892966361,
+  "recall": 0.5121602288984263,
+  "f1": 0.47213979558193203,
+  "auc": 0.8135716254572551,
+  "pr_auc": 0.4173066188289168,
+  "brier": 0.10838298345043669,
+  "tn": 6778,
+  "fp": 919,
+  "fn": 682,
+  "tp": 716
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_lightgbm_H6m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/lightgbm_binary_m5_H6m.joblib
+
+====================================================================================================
+Final model=RF, config=rf_cfg0_depth12_leaf5, H=6m
+threshold: 0.3
+Metrics: {
+  "positive_rate": 0.1537108301264431,
+  "threshold": 0.3,
+  "pred_positive_rate": 0.16382627817482134,
+  "acc": 0.8359538207806487,
+  "precision": 0.4684563758389262,
+  "recall": 0.49928469241773965,
+  "f1": 0.48337950138504154,
+  "auc": 0.8201863386939116,
+  "pr_auc": 0.43013503072157366,
+  "brier": 0.10512153584553328,
+  "tn": 6905,
+  "fp": 792,
+  "fn": 700,
+  "tp": 698
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_rf_H6m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/rf_binary_m5_H6m.joblib
+
+####################################################################################################
+Final test: H=12m
+Train: (1209975, 282) Counter({0: 902429, 1: 307546})
+Test: (9095, 282) Counter({0: 6846, 1: 2249})
+
+====================================================================================================
+Final model=LightGBM, config=lgbm_cfg0_xgb_like, H=12m
+threshold: 0.27
+Metrics: {
+  "positive_rate": 0.24727872457394173,
+  "threshold": 0.27,
+  "pred_positive_rate": 0.26476085761407364,
+  "acc": 0.7907641561297416,
+  "precision": 0.571843853820598,
+  "recall": 0.6122721209426412,
+  "f1": 0.5913678333691217,
+  "auc": 0.8235414330931903,
+  "pr_auc": 0.5795627471801231,
+  "brier": 0.14023548344479103,
+  "tn": 5815,
+  "fp": 1031,
+  "fn": 872,
+  "tp": 1377
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_lightgbm_H12m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/lightgbm_binary_m5_H12m.joblib
+
+====================================================================================================
+Final model=RF, config=rf_cfg0_depth12_leaf5, H=12m
+threshold: 0.31
+Metrics: {
+  "positive_rate": 0.24727872457394173,
+  "threshold": 0.31,
+  "pred_positive_rate": 0.2593732820230896,
+  "acc": 0.7968114348543156,
+  "precision": 0.5849936413734633,
+  "recall": 0.6136060471320587,
+  "f1": 0.5989583333333333,
+  "auc": 0.8273960693018106,
+  "pr_auc": 0.5969303020419159,
+  "brier": 0.13764252588330006,
+  "tn": 5867,
+  "fp": 979,
+  "fn": 869,
+  "tp": 1380
+}
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/predictions/predictions_test_rf_H12m.csv
+Saved: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison/models/rf_binary_m5_H12m.joblib
+Job finished at: 2026年 06月 27日 星期六 21:29:12 CST
+Output dir: PROJECT_ROOT/outputs/rf_lightgbm_binary_m5_comparison
